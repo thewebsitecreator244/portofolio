@@ -394,6 +394,10 @@ ul, ol, li {
   box-sizing: border-box;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
 .header {
   padding: 20.5px 0;
 }
@@ -528,4 +532,30 @@ ul, ol, li {
 }
 .burger.open .burger__line {
   background-color: transparent;
+}
+
+.hero {
+  max-width: 570px;
+}
+.hero__title {
+  color: #00ff8c;
+  font-size: 64px;
+  font-weight: 900;
+  margin-bottom: 14px;
+}
+.hero__subtitle {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+.hero__description {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.avatar {
+  width: 629px;
+  height: 575px;
+  background-image: url("../../img/avatar__bg.png");
+  background-repeat: no-repeat;
 }/*# sourceMappingURL=main.css.map */
