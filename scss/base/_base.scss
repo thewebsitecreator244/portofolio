@@ -1,0 +1,17 @@
+@use './vars' as *;
+
+body{
+    background-color: $bg-body;
+    color: $text-color;
+    font-family: "Inconsolata", monospace;
+}
+ul,ol,li {
+        list-style: none;
+}
+*,*>*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
