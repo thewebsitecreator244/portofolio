@@ -1,6 +1,41 @@
+@use"../base/vars" as *;
+
 .avatar{
     width: 629px;
     height: 575px;
     background-image: url("../../img/avatar__bg.png");
     background-repeat: no-repeat;
+    position: relative;
+
+    &__item{
+        position:absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 374px;
+        height: 374px;
+        border-radius: 29% 71% 83% 17% / 75% 83% 17% 25% ;
+
+        &--wrapper-image{
+            overflow: hidden;
+            z-index: 2;
+            background-color: antiquewhite;
+        }
+
+        &--top{
+            background-color: $text-color;
+            transform: translate(-50%,-50%) rotate(45deg);
+        }
+
+        &--bottom{
+            background-color: $context-color;
+            transform:translate(-50%,-50%) rotate(-70deg)
+        }
+    }
+
+    &__image{
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
 }

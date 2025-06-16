@@ -477,6 +477,7 @@ h1, h2, h3, h4, h5, h6 {
 .welcome__content {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .container {
@@ -563,4 +564,33 @@ h1, h2, h3, h4, h5, h6 {
   height: 575px;
   background-image: url("../../img/avatar__bg.png");
   background-repeat: no-repeat;
+  position: relative;
+}
+.avatar__item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 374px;
+  height: 374px;
+  border-radius: 29% 71% 83% 17%/75% 83% 17% 25%;
+}
+.avatar__item--wrapper-image {
+  overflow: hidden;
+  z-index: 2;
+  background-color: antiquewhite;
+}
+.avatar__item--top {
+  background-color: #f0e3ca;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.avatar__item--bottom {
+  background-color: #00ff8c;
+  transform: translate(-50%, -50%) rotate(-70deg);
+}
+.avatar__image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
