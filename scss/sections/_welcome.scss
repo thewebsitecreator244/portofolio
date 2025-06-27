@@ -3,5 +3,14 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 72.5px 0;
+
+
+        @media (max-width:1200px) {
+            flex-direction: column;
+            gap: 64px;
+            justify-content: center;
+            padding: 128px 0;
+        }
     }
 }
