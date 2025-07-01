@@ -1,0 +1,27 @@
+@use"../base/vars" as *;
+.animated-block {
+    width: 101px;
+    height: 101px;
+    position: relative;
+    flex-shrink: 0;
+    &__item{
+        width: 72px;
+        height: 72px;
+        border-radius: 29% 71% 83% 17% / 75% 83% 17% 25% ;
+        position:absolute;
+        top: 50%;
+        left: 50%;
+    }
+
+    &--one{
+        background-color: $text-color;
+        transform: translate(-50%,-50%) rotate(45deg);
+    }
+
+    &--two{
+        background-color: $context-color;
+        z-index: 2;
+        transform:translate(-50%,-50%) rotate(-70deg)
+    }
+}
+

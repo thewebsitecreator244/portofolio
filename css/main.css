@@ -498,6 +498,29 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.about-me__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  padding: 64px 0;
+}
+@media (max-width: 768px) {
+  .about-me__content {
+    flex-direction: column;
+  }
+}
+
+.about-me__text {
+  font-size: 24px;
+  max-width: 904px;
+}
+@media (max-width: 768px) {
+  .about-me__text {
+    text-align: center;
+  }
+}
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -672,4 +695,28 @@ h1, h2, h3, h4, h5, h6 {
      object-fit: cover;
   height: 100%;
   width: 100%;
+}
+
+.animated-block {
+  width: 101px;
+  height: 101px;
+  position: relative;
+  flex-shrink: 0;
+}
+.animated-block__item {
+  width: 72px;
+  height: 72px;
+  border-radius: 29% 71% 83% 17%/75% 83% 17% 25%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.animated-block--one {
+  background-color: #f0e3ca;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.animated-block--two {
+  background-color: #00ff8c;
+  z-index: 2;
+  transform: translate(-50%, -50%) rotate(-70deg);
 }/*# sourceMappingURL=main.css.map */

@@ -6,9 +6,11 @@
 // sections
 @use "./sections/header.scss";
 @use "./sections/welcome.scss";
+@use "./sections/about-me.scss";
 
 //blocks
 @use "./blocks/container.scss";
 @use "./blocks/burger.scss";
 @use "./blocks/hero.scss";
 @use "./blocks/avatar.scss";
+@use "./blocks/animated-block.scss";
