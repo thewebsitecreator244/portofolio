@@ -567,14 +567,44 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 900;
   margin-bottom: 14px;
 }
+@media (max-width: 450px) {
+  .hero__title {
+    font-size: 40px;
+  }
+}
+@media (max-width: 375px) {
+  .hero__title {
+    font-size: 25px;
+  }
+}
 .hero__subtitle {
   font-size: 40px;
   font-weight: 700;
   margin-bottom: 14px;
 }
+@media (max-width: 450px) {
+  .hero__subtitle {
+    font-size: 32px;
+  }
+}
+@media (max-width: 375px) {
+  .hero__subtitle {
+    font-size: 21px;
+  }
+}
 .hero__description {
   font-size: 20px;
   font-weight: 400;
+}
+@media (max-width: 450px) {
+  .hero__description {
+    font-size: 24px;
+  }
+}
+@media (max-width: 375px) {
+  .hero__description {
+    font-size: 17px;
+  }
 }
 
 .avatar {
@@ -584,6 +614,25 @@ h1, h2, h3, h4, h5, h6 {
   background-repeat: no-repeat;
   position: relative;
 }
+@media (max-width: 768px) {
+  .avatar {
+    width: 500px;
+    height: 445px;
+    background-size: cover;
+  }
+}
+@media (max-width: 600px) {
+  .avatar {
+    width: 400px;
+    height: 345px;
+  }
+}
+@media (max-width: 375px) {
+  .avatar {
+    width: 300px;
+    height: 245px;
+  }
+}
 .avatar__item {
   position: absolute;
   top: 50%;
@@ -592,6 +641,18 @@ h1, h2, h3, h4, h5, h6 {
   width: 374px;
   height: 374px;
   border-radius: 29% 71% 83% 17%/75% 83% 17% 25%;
+}
+@media (max-width: 768px) {
+  .avatar__item {
+    width: 250px;
+    height: 250px;
+  }
+}
+@media (max-width: 375px) {
+  .avatar__item {
+    width: 180px;
+    height: 180px;
+  }
 }
 .avatar__item--wrapper-image {
   overflow: hidden;

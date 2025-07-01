@@ -6,6 +6,22 @@
     background-image: url("../img/avatar__bg.png");
     background-repeat: no-repeat;
     position: relative;
+
+    @media (max-width:768px) {
+        width: 500px;
+        height: 445px;
+        background-size: cover;
+    }
+
+    @media (max-width:600px) {
+        width: 400px;
+        height: 345px;
+    }
+    @media (max-width:375px) {
+        width: 300px;
+        height: 245px;
+        
+    }
     
 
     &__item{
@@ -16,6 +32,16 @@
         width: 374px;
         height: 374px;
         border-radius: 29% 71% 83% 17% / 75% 83% 17% 25% ;
+
+        @media (max-width:768px) {
+            width: 250px;
+            height: 250px;
+            
+        }
+        @media (max-width:375px) {
+        width: 180px;
+        height: 180px;
+        }
 
         &--wrapper-image{
             overflow: hidden;

@@ -6,14 +6,35 @@
         font-size: 64px;
         font-weight: 900;
         margin-bottom: 14px;
+        @media (max-width:450px) {
+            font-size:40px;
+        }
+        @media (max-width:375px) {
+        font-size: 25px;
+
+        }
     }
     &__subtitle {
         font-size: 40px;
         font-weight: 700;
         margin-bottom: 14px;
+        @media (max-width:450px) {
+            font-size:32px;
+        }
+        @media (max-width:375px) {
+        font-size: 21px;
+        }
+
     }
     &__description {
         font-size: 20px;
-        font-weight:400 ;
+        font-weight:400;
+        @media (max-width:450px) {
+            font-size:24px;
+        }
+        @media (max-width:375px) {
+        font-size: 17px;
+        }
+
     }
 }
