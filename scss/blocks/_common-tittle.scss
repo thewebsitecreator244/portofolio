@@ -1,0 +1,6 @@
+@use"../base/vars" as *;
+.common-tittle{
+    font-size: 32px;
+    font-weight: bold;
+    color: $context-color;
+}

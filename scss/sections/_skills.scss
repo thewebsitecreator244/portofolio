@@ -1,0 +1,36 @@
+@use"../base/vars" as *;
+.skills {
+}
+.container {
+}
+.skills__content {
+    .common-tittle {
+        text-align: center;
+        margin-bottom: 32px;
+    }
+}
+.skill-list {
+    gap: 16px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: center;
+}
+.skill-list__item {
+}
+.skill-card {
+    // width: 200px;
+    height: 300px;
+    background-color: $bg-card;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+
+}
+.skill-icon {
+}
+.skill-card__tittle {
+}
