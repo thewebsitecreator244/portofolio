@@ -33,8 +33,17 @@
     gap: 16px;
     border-radius: 10px;
 
+    
+    
 }
 .skill-icon {
+    fill: $text-color;
+}
+
+.skill-card--html:hover {
+        .skill-icon{
+            fill: $html-color;
+        }
 }
 .skill-card__tittle {
     font-family: Arial, Helvetica, sans-serif;
