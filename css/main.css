@@ -529,7 +529,18 @@ h1, h2, h3, h4, h5, h6 {
 .skill-list {
   gap: 16px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(200px, 270px));
+  justify-content: center;
+}
+@media (max-width: 650px) {
+  .skill-list {
+    grid-template-columns: repeat(2, minmax(200px, 270px));
+  }
+}
+@media (max-width: 500px) {
+  .skill-list {
+    grid-template-columns: minmax(200px, 360px);
+  }
 }
 
 .skill-card {
@@ -540,6 +551,13 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   justify-content: center;
   gap: 16px;
+  border-radius: 10px;
+}
+
+.skill-card__tittle {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  font-weight: 500;
 }
 
 .container {
