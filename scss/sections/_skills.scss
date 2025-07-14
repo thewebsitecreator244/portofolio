@@ -65,13 +65,13 @@
             fill: $scss-color;
         }
 }
-.skill-card--python:hover .skill-icon .python {
-        .python-top{
-            fill: red
-        }
-        // .python-bottom{
-        //     fill: $python-bottom-color;
-        // }
+.skill-card--python:hover{
+    .python-top {
+        fill: $python-top-color;
+    }
+    .python-bottom {
+        fill: $python-bottom-color;
+    }
 }
 .skill-card__tittle {
     font-family: Arial, Helvetica, sans-serif;
