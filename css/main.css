@@ -578,8 +578,11 @@ h1, h2, h3, h4, h5, h6 {
   fill: #CA669B;
 }
 
-.skill-card--python:hover .skill-icon .python .python-top {
-  fill: red;
+.skill-card--python:hover .python-top {
+  fill: #1565A7;
+}
+.skill-card--python:hover .python-bottom {
+  fill: #F9C600;
 }
 
 .skill-card__tittle {
@@ -601,6 +604,11 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: center;
   gap: 16px;
+}
+
+.project-card__image {
+  width: 320px;
+  height: 320px;
 }
 
 .container {
