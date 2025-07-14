@@ -562,6 +562,26 @@ h1, h2, h3, h4, h5, h6 {
   fill: #FC490B;
 }
 
+.skill-card--css:hover .skill-icon {
+  fill: #2196F4;
+}
+
+.skill-card--js:hover .skill-icon {
+  fill: #FFDF00;
+}
+
+.skill-card--git:hover .skill-icon {
+  fill: #F25234;
+}
+
+.skill-card--scss:hover .skill-icon {
+  fill: #CA669B;
+}
+
+.skill-card--python:hover .skill-icon .python .python-top {
+  fill: red;
+}
+
 .skill-card__tittle {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 32px;
