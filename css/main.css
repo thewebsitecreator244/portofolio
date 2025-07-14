@@ -588,6 +588,21 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
 }
 
+.projects__content {
+  padding: 64px 0;
+}
+.projects__content .common-tittle {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.projects-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
