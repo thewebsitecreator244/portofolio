@@ -87,7 +87,8 @@ a {
  */
 abbr[title] {
   text-decoration: underline;
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
 }
 
 /**
@@ -331,7 +332,6 @@ dialog {
   color: black;
   display: block;
   height: -moz-fit-content;
-  height: -webkit-fit-content;
   height: fit-content;
   left: 0;
   margin: auto;
@@ -339,7 +339,6 @@ dialog {
   position: absolute;
   right: 0;
   width: -moz-fit-content;
-  width: -webkit-fit-content;
   width: fit-content;
 }
 
@@ -406,7 +405,8 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   width: 100%;
   background-color: rgba(255, 255, 255, 0);
-  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   z-index: 10;
 }
 @media (max-width: 768px) {
@@ -438,7 +438,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logotype__image {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
 }
 
@@ -605,9 +606,64 @@ h1, h2, h3, h4, h5, h6 {
   gap: 16px;
 }
 
-.project-card__image {
+.project-card {
   width: 320px;
   height: 320px;
+  overflow: hidden;
+  position: relative;
+}
+.project-card .common-tittle {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.project-card__info {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: rgba(33, 32, 29, 0.95);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+}
+
+.project-card__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.project-card__stack {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.project-card__description {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.project-card__link {
+  background-color: #32312E;
+  display: inline-block;
+  border-radius: 4px;
+  color: #f0e3ca;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 12px 20px;
+}
+
+.project-card__line {
+  height: 1px;
+  width: 75%;
+  background-color: #00ff8c;
 }
 
 .container {
@@ -780,7 +836,8 @@ h1, h2, h3, h4, h5, h6 {
   transform: translate(-50%, -50%) rotate(-70deg);
 }
 .avatar__image {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 100%;
   width: 100%;
 }
