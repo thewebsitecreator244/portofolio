@@ -11,16 +11,26 @@
 
 }
 .projects-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    // display: flex;
+    // align-items: center;
+    // gap: 16px;
+    // flex-wrap: wrap;
     gap: 16px;
+    display: grid;
+    grid-template-columns: repeat(2,minmax(320px,400px));
+    justify-content: center;
 
+    @media (max-width:768px) {
+        grid-template-columns: 80%;  
+    }
+    @media (max-width:425px) {
+        grid-template-columns: 1fr;  
+    }
 }
 .projects-list__item {
 }
 .project-card {
-    width: 320px;
+    // width: 320px;
     height: 320px;
     overflow: hidden;
     position: relative;
