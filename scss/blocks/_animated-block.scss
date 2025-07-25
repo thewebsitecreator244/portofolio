@@ -1,4 +1,5 @@
 @use"../base/vars" as *;
+@use "../base/animation" as *;
 .animated-block {
     width: 101px;
     height: 101px;
@@ -14,14 +15,19 @@
     }
 
     &--one{
-        background-color: $text-color;
+        background-color: $text-color-transparent;
         transform: translate(-50%,-50%) rotate(45deg);
+        animation: rotate-avatar 4s linear infinite;
+        backdrop-filter: blur(5px);
+        filter: blur(2.5px);
     }
 
     &--two{
-        background-color: $context-color;
-        z-index: 2;
-        transform:translate(-50%,-50%) rotate(-70deg)
+        background-color: $context-color-transparent;
+        transform: translate(-50%,-50%) rotate(45deg);
+        animation: rotate-avatar 8s ease-in-out infinite;
+        backdrop-filter: blur(5px);
+        filter: blur(2.5px);
     }
 }
 

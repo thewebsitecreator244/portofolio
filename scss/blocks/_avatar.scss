@@ -1,4 +1,5 @@
 @use"../base/vars" as *;
+@use "../base/animation" as *;
 
 .avatar{
     width: 629px;
@@ -6,6 +7,7 @@
     background-image: url("../img/avatar__bg.png");
     background-repeat: no-repeat;
     position: relative;
+
 
     @media (max-width:768px) {
         width: 500px;
@@ -32,6 +34,8 @@
         width: 374px;
         height: 374px;
         border-radius: 29% 71% 83% 17% / 75% 83% 17% 25% ;
+        
+        
 
         @media (max-width:768px) {
             width: 250px;
@@ -50,13 +54,20 @@
         }
 
         &--top{
-            background-color: $text-color;
+            background-color: $text-color-transparent;
             transform: translate(-50%,-50%) rotate(45deg);
+            animation: rotate-avatar 4s linear infinite;
+            backdrop-filter: blur(5px);
+            filter: blur(2.5px);
         }
 
         &--bottom{
-            background-color: $context-color;
-            transform:translate(-50%,-50%) rotate(-70deg)
+            background-color: $context-color-transparent;
+            transform:translate(-50%,-50%) rotate(-70deg);
+            animation: rotate-avatar 8s ease-in-out infinite;
+            backdrop-filter: blur(5px);
+            filter: blur(2.5px);
+
         }
     }
 

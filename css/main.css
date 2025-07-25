@@ -87,7 +87,8 @@ a {
  */
 abbr[title] {
   text-decoration: underline;
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
 }
 
 /**
@@ -331,7 +332,6 @@ dialog {
   color: black;
   display: block;
   height: -moz-fit-content;
-  height: -webkit-fit-content;
   height: fit-content;
   left: 0;
   margin: auto;
@@ -339,7 +339,6 @@ dialog {
   position: absolute;
   right: 0;
   width: -moz-fit-content;
-  width: -webkit-fit-content;
   width: fit-content;
 }
 
@@ -399,6 +398,14 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
+@keyframes rotate-avatar {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
 .header {
   padding: 20.5px 0;
   position: fixed;
@@ -406,7 +413,8 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   width: 100%;
   background-color: rgba(255, 255, 255, 0);
-  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   z-index: 10;
 }
 @media (max-width: 768px) {
@@ -438,7 +446,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logotype__image {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
 }
 
@@ -556,7 +565,8 @@ h1, h2, h3, h4, h5, h6 {
   fill: #f0e3ca;
   width: 114px;
   height: 128px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (max-width: 425px) {
   .skill-card__icon {
@@ -653,14 +663,16 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: center;
   gap: 16px;
-  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
   transition: top 0.3s;
 }
 
 .project-card__image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .project-card__stack {
@@ -852,15 +864,24 @@ h1, h2, h3, h4, h5, h6 {
   background-color: antiquewhite;
 }
 .avatar__item--top {
-  background-color: #f0e3ca;
+  background-color: rgba(240, 227, 202, 0.6078431373);
   transform: translate(-50%, -50%) rotate(45deg);
+  animation: rotate-avatar 4s linear infinite;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  filter: blur(2.5px);
 }
 .avatar__item--bottom {
-  background-color: #00ff8c;
+  background-color: rgba(0, 255, 140, 0.7450980392);
   transform: translate(-50%, -50%) rotate(-70deg);
+  animation: rotate-avatar 8s ease-in-out infinite;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  filter: blur(2.5px);
 }
 .avatar__image {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 100%;
   width: 100%;
 }
@@ -880,13 +901,20 @@ h1, h2, h3, h4, h5, h6 {
   left: 50%;
 }
 .animated-block--one {
-  background-color: #f0e3ca;
+  background-color: rgba(240, 227, 202, 0.6078431373);
   transform: translate(-50%, -50%) rotate(45deg);
+  animation: rotate-avatar 4s linear infinite;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  filter: blur(2.5px);
 }
 .animated-block--two {
-  background-color: #00ff8c;
-  z-index: 2;
-  transform: translate(-50%, -50%) rotate(-70deg);
+  background-color: rgba(0, 255, 140, 0.7450980392);
+  transform: translate(-50%, -50%) rotate(45deg);
+  animation: rotate-avatar 8s ease-in-out infinite;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  filter: blur(2.5px);
 }
 
 .common-tittle {
