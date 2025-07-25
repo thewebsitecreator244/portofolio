@@ -87,8 +87,7 @@ a {
  */
 abbr[title] {
   text-decoration: underline;
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
 }
 
 /**
@@ -332,6 +331,7 @@ dialog {
   color: black;
   display: block;
   height: -moz-fit-content;
+  height: -webkit-fit-content;
   height: fit-content;
   left: 0;
   margin: auto;
@@ -339,6 +339,7 @@ dialog {
   position: absolute;
   right: 0;
   width: -moz-fit-content;
+  width: -webkit-fit-content;
   width: fit-content;
 }
 
@@ -405,8 +406,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   width: 100%;
   background-color: rgba(255, 255, 255, 0);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
   z-index: 10;
 }
 @media (max-width: 768px) {
@@ -438,8 +438,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logotype__image {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
 }
 
@@ -553,6 +552,18 @@ h1, h2, h3, h4, h5, h6 {
   gap: 16px;
   border-radius: 10px;
 }
+.skill-card__icon {
+  fill: #f0e3ca;
+  width: 114px;
+  height: 128px;
+  object-fit: cover;
+}
+@media (max-width: 425px) {
+  .skill-card__icon {
+    width: 32px;
+    height: 28px;
+  }
+}
 @media (max-width: 425px) {
   .skill-card {
     flex-direction: row;
@@ -560,36 +571,23 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@media (max-width: 425px) {
-  .wrapper-skill-icon {
-    width: 32px;
-    height: 32px;
-  }
-}
-
-.skill-icon {
-  fill: #f0e3ca;
-  width: 100%;
-  height: 100%;
-}
-
-.skill-card--html:hover .skill-icon {
+.skill-card--html:hover .skill-card__icon {
   fill: #FC490B;
 }
 
-.skill-card--css:hover .skill-icon {
+.skill-card--css:hover .skill-card__icon {
   fill: #2196F4;
 }
 
-.skill-card--js:hover .skill-icon {
+.skill-card--js:hover .skill-card__icon {
   fill: #FFDF00;
 }
 
-.skill-card--git:hover .skill-icon {
+.skill-card--git:hover .skill-card__icon {
   fill: #F25234;
 }
 
-.skill-card--scss:hover .skill-icon {
+.skill-card--scss:hover .skill-card__icon {
   fill: #CA669B;
 }
 
@@ -655,16 +653,14 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: center;
   gap: 16px;
-  -webkit-backdrop-filter: blur(3px);
-          backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
   transition: top 0.3s;
 }
 
 .project-card__image {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .project-card__stack {
@@ -864,8 +860,7 @@ h1, h2, h3, h4, h5, h6 {
   transform: translate(-50%, -50%) rotate(-70deg);
 }
 .avatar__image {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: 100%;
   width: 100%;
 }
