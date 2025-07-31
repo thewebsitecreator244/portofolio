@@ -553,13 +553,28 @@ h1, h2, h3, h4, h5, h6 {
 
 .skill-card {
   height: 300px;
-  background-color: #1f1e1b;
+  position: relative;
+}
+.skill-card__front, .skill-card__back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+.skill-card__back {
+  transform: rotateY(180deg);
+  background-color: aqua;
+}
+.skill-card__front {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   gap: 16px;
-  border-radius: 10px;
+  background-color: #1f1e1b;
 }
 .skill-card__icon {
   fill: #f0e3ca;
