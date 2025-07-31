@@ -39,6 +39,7 @@
         height: 100%;
         width: 100%;
         border-radius: 10px;
+        transition: transform 0.5s;
 
     }
     &__back{
@@ -52,8 +53,8 @@
         justify-content: center;
         gap: 16px;
         background-color: $bg-card;
+        transform: rotateY(0deg);
     }
-
 
     &__icon {
         fill: $text-color;
@@ -72,7 +73,15 @@
         height: 60px;
     }
 }
-
+.skill-card.active{
+    &__back{
+        transform: rotate(0deg);
+    }
+    &__front{
+        transform: rotate(180deg);
+        background-color: red;
+    }
+}
 .skill-card--html:hover {
         .skill-card__icon{
             fill: $html-color;

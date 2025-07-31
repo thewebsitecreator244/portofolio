@@ -563,6 +563,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   width: 100%;
   border-radius: 10px;
+  transition: transform 0.5s;
 }
 .skill-card__back {
   transform: rotateY(180deg);
@@ -575,6 +576,7 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   gap: 16px;
   background-color: #1f1e1b;
+  transform: rotateY(0deg);
 }
 .skill-card__icon {
   fill: #f0e3ca;
@@ -594,6 +596,14 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: row;
     height: 60px;
   }
+}
+
+.skill-card.active__back {
+  transform: rotate(0deg);
+}
+.skill-card.active__front {
+  transform: rotate(180deg);
+  background-color: red;
 }
 
 .skill-card--html:hover .skill-card__icon {
