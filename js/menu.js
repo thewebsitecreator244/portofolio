@@ -2,8 +2,8 @@ const HEADER = document.querySelector("#main-header");
 const MENU = HEADER.querySelector("#menu");
 
 function toggle(event){
-    let isBurger = event.target.closest("#burger");
-    let isAnchor = event.target.closest("[data-anchor]");
+    const isBurger = event.target.closest("#burger");
+    const isAnchor = event.target.closest("[data-anchor]");
 
     if (isBurger){
         MENU.classList.toggle("open");
