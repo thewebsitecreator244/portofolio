@@ -568,6 +568,10 @@ h1, h2, h3, h4, h5, h6 {
 .skill-card__back {
   transform: rotateY(180deg);
   background-color: #1f1e1b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
 }
 .skill-card__front {
   display: flex;
@@ -661,6 +665,24 @@ h1, h2, h3, h4, h5, h6 {
 .fade.active {
   background-color: rgba(0, 255, 140, 0.7450980392);
   transform: scale(1);
+}
+
+.skill-card__close {
+  width: 50px;
+  height: 50px;
+  background-image: url("../../img/cross.svg");
+  background-color: transparent;
+  background-position: center;
+  background-size: contain;
+  border: none;
+  top: 0px;
+  right: 0px;
+  position: absolute;
+}
+
+.skill-card__description {
+  font-weight: 600;
+  font-size: 20px;
 }
 
 .projects__content {

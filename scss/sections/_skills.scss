@@ -45,6 +45,10 @@
     &__back{
         transform: rotateY(180deg);
         background-color: $bg-card;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
     }
     &__front{
         display: flex;
@@ -143,4 +147,20 @@
         background-color: $context-color-transparent;
         transform: scale(1);
     }
+}
+.skill-card__close{
+    width: 50px;
+    height: 50px;
+    background-image: url("../../img/cross.svg");
+    background-color: transparent;
+    background-position: center;
+    background-size: contain;
+    border: none;
+    top: 0px;
+    right:0px;
+    position: absolute;
+}
+.skill-card__description {
+    font-weight: 600;
+    font-size: 20px;
 }
