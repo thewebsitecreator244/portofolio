@@ -679,7 +679,7 @@ h1, h2, h3, h4, h5, h6 {
 .skill-card__close {
   width: 50px;
   height: 50px;
-  background-image: url("../../img/cross.svg");
+  background-image: url("../img/cross.svg");
   background-color: transparent;
   background-position: center;
   background-size: contain;
