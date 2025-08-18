@@ -28,8 +28,11 @@
 }
 .skill-card {
     height: 300px;
-    
     position: relative;
+
+    @media(max-width: 425px){
+        height: 60px;
+    }
 
     &__front, &__back{
         position: absolute;
@@ -58,6 +61,10 @@
         gap: 16px;
         background-color: $bg-card;
         transform: rotateY(0deg);
+
+        @media(max-width: 425px){
+            flex-direction: row;
+        }
     }
 
     &__icon {
@@ -72,10 +79,6 @@
         }
     }
 
-    @media(max-width: 425px){
-        flex-direction: row;
-        height: 60px;
-    }
 }
 .skill-card.active{
     position: fixed;
@@ -84,8 +87,12 @@
     transform: translate(-50%,-50%);
     z-index: 30;
     max-width:800px;
-    width: 100%;
+    width: 96%;
+    
 
+    @media(max-width: 425px){
+        height: 300px;
+    }
 
     .skill-card__back{
         transform: rotateY(0deg);
