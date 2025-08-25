@@ -5,11 +5,30 @@
     display: flex;
     justify-content: center;
     gap:64px;
+    @media (max-width:768px) {
+        flex-direction: column;
+        align-items: center;
+        
+    }
 }
 .footer__hero {
     max-width: 213px;
     .logotype{
         margin-bottom: 16px;
+    @media(max-width:768px){
+        margin-left: 90px;
+    }
+    @media(max-width:320px){
+                margin-left: 60px;
+    }
+    }
+    @media(max-width:768px){
+        max-width: 339px;
+    }
+    .footer__description{
+        @media(max-width:320px){
+        margin-left: 25px;
+        }
     }
 }
 
@@ -20,6 +39,10 @@
 .footer__contacts { 
     .common-tittle{
         margin-bottom: 16px;
+        @media (max-width:768px){
+            font-size: 32px;
+            text-align: center;
+        }
         
     } 
 }
@@ -31,6 +54,9 @@
     column-gap: 48px; 
     max-width: 700px;
     justify-content: space-between;
+    @media(max-width:768px){
+        margin: 60px;
+    }
 
 }
 .contacts__item {
@@ -39,7 +65,13 @@
     text-decoration: none;
     color: $context-color;
     font-size: 24px;
-    
+    @media(max-width:768px){
+        font-size: 17px;
+    }
+    @media(max-width:425px){
+        font-size: 10px;
+        
+    }
 }
 .social-link__image {
 }
