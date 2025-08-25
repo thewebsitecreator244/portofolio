@@ -1,0 +1,49 @@
+@use "../base/vars" as *;
+.footer {
+}
+.footer__content {
+    display: flex;
+    justify-content: center;
+    gap:64px;
+}
+.footer__hero {
+    max-width: 213px;
+    .logotype{
+        margin-bottom: 16px;
+    }
+}
+
+
+.footer__description {
+    font-size: 20px;
+}
+.footer__contacts { 
+    .common-tittle{
+        margin-bottom: 16px;
+        
+    } 
+}
+
+.contacts {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 32px;
+    column-gap: 48px; 
+    max-width: 700px;
+    justify-content: space-between;
+
+}
+.contacts__item {
+}
+.social-link {
+    text-decoration: none;
+    color: $context-color;
+    font-size: 24px;
+    
+}
+.social-link__image {
+}
+.social-link__text {
+}
+.social-icon__text {
+}

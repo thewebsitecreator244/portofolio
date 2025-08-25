@@ -10,6 +10,7 @@
 @use "./sections/about-me.scss";
 @use "./sections/skills.scss";
 @use "./sections/projects.scss";
+@use "./sections/footer.scss";
 
 //blocks
 @use "./blocks/container.scss";
@@ -18,4 +19,4 @@
 @use "./blocks/avatar.scss";
 @use "./blocks/animated-block.scss";
 @use "./blocks/common-tittle.scss";
-@use "./blocks/slider.scss"
+@use "./blocks/slider.scss";
