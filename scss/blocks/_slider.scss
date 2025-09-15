@@ -1,0 +1,51 @@
+.review-slider{
+    background-color: rgb(0, 255, 145);
+    max-width: 80%;
+    margin: 0 auto;
+    position: relative;
+
+}
+.slick-arrow{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0;
+    width: 32px;
+    height: 32px;
+    border: none;
+    background-color:transparent;
+    cursor:pointer;
+}
+
+.slick-next{
+    right: -50px;
+    background-image: url("../../img/arrow-right.svg");
+}
+
+.slick-prev{
+    left: -50px;
+    background-image: url("../../img/arrow-left.svg");
+
+}
+
+.slick-list{
+    overflow: hidden;
+
+}
+
+.slick-track{
+    display: flex;
+
+}
+
+.slick-slide{
+    background-color: #0f0f0f;
+}
+
+.slick-dots{
+    display: flex;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    bottom: -50px;
+}
