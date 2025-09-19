@@ -1,5 +1,5 @@
+@use"../base/vars" as *;
 .review-slider{
-    background-color: rgb(0, 255, 145);
     max-width: 80%;
     margin: 0 auto;
     position: relative;
@@ -15,6 +15,10 @@
     border: none;
     background-color:transparent;
     cursor:pointer;
+    @media (max-width:768px) {
+        display: none !important;
+    }
+
 }
 
 .slick-next{
@@ -47,5 +51,26 @@
     position: absolute;
     left:50%;
     transform: translateX(-50%);
-    bottom: -50px;
+    bottom: -20px;
+    gap: 5px;
+
+    button{
+        background-color: transparent;
+        cursor: pointer;
+        font-size: 0; 
+        border: 3px solid $text-color;
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        transition: 0.3s;
+        &:hover{
+            border-color: $context-color;
+        }
+    }
+    .slick-active{
+        button{
+            border-color: $context-color;
+            transform: scale(1.2);
+        }
+    }
 }

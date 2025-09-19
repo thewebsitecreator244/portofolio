@@ -1096,7 +1096,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .review-slider {
-  background-color: rgb(0, 255, 145);
   max-width: 80%;
   margin: 0 auto;
   position: relative;
@@ -1112,6 +1111,11 @@ h1, h2, h3, h4, h5, h6 {
   border: none;
   background-color: transparent;
   cursor: pointer;
+}
+@media (max-width: 768px) {
+  .slick-arrow {
+    display: none !important;
+  }
 }
 
 .slick-next {
@@ -1141,5 +1145,23 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: -50px;
+  bottom: -20px;
+  gap: 5px;
+}
+.slick-dots button {
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 0;
+  border: 3px solid #f0e3ca;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  transition: 0.3s;
+}
+.slick-dots button:hover {
+  border-color: #00ff8c;
+}
+.slick-dots .slick-active button {
+  border-color: #00ff8c;
+  transform: scale(1.2);
 }/*# sourceMappingURL=main.css.map */
