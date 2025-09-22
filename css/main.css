@@ -845,16 +845,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .contacts {
   display: flex;
-  flex-wrap: wrap;
   row-gap: 32px;
+  flex-wrap: wrap;
   -moz-column-gap: 48px;
        column-gap: 48px;
   max-width: 700px;
   justify-content: space-between;
 }
-@media (max-width: 768px) {
+@media (max-width: 993px) {
   .contacts {
-    margin: 60px;
+    flex-direction: column;
   }
 }
 
@@ -862,6 +862,9 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   color: #00ff8c;
   font-size: 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 @media (max-width: 768px) {
   .social-link {
@@ -992,8 +995,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 768px) {
   .avatar {
-    width: 500px;
-    height: 445px;
     background-size: cover;
   }
 }
@@ -1003,7 +1004,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 345px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .avatar {
     width: 300px;
     height: 245px;
@@ -1138,6 +1139,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .slick-slide {
   background-color: #0f0f0f;
+  padding: 16px;
 }
 
 .slick-dots {
@@ -1164,4 +1166,22 @@ h1, h2, h3, h4, h5, h6 {
 .slick-dots .slick-active button {
   border-color: #00ff8c;
   transform: scale(1.2);
+}
+
+.slick-slide__user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.slick-slide__avatar-wrapper {
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+
+.slick-slide__avatar {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */

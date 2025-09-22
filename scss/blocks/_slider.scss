@@ -44,6 +44,7 @@
 
 .slick-slide{
     background-color: #0f0f0f;
+    padding: 16px;
 }
 
 .slick-dots{
@@ -73,4 +74,25 @@
             transform: scale(1.2);
         }
     }
+}
+.slick-slide__user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+.slick-slide__avatar-wrapper {
+    overflow: hidden ;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+.slick-slide__avatar {
+    width: 100%;
+}
+.slick-slide__username {
+}
+.slick-slide__review {
+}
+.slick-slide {
 }

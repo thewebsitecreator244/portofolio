@@ -49,13 +49,13 @@
 
 .contacts {
     display: flex;
-    flex-wrap: wrap;
     row-gap: 32px;
+    flex-wrap: wrap;
     column-gap: 48px; 
     max-width: 700px;
     justify-content: space-between;
-    @media(max-width:768px){
-        margin: 60px;
+    @media(max-width:993px){
+        flex-direction: column;
     }
 
 }
@@ -65,6 +65,9 @@
     text-decoration: none;
     color: $context-color;
     font-size: 24px;
+    display: flex;
+    align-items: center;
+    gap:16px ;
     @media(max-width:768px){
         font-size: 17px;
     }
