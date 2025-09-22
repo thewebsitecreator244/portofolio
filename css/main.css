@@ -434,7 +434,7 @@ h1, h2, h3, h4, h5, h6 {
     gap: 16px;
   }
 }
-@media (max-width: 525px) {
+@media (max-width: 600px) {
   .header__content {
     flex-direction: row;
   }
@@ -451,7 +451,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
 }
 
-@media (max-width: 525px) {
+@media (max-width: 600px) {
   .menu {
     position: fixed;
     top: 0;
@@ -470,9 +470,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .menu__list {
   display: flex;
-  gap: 64px;
+  gap: 50px;
 }
-@media (max-width: 525px) {
+@media (max-width: 600px) {
   .menu__list {
     flex-direction: column;
     height: 100vh;
@@ -917,7 +917,7 @@ h1, h2, h3, h4, h5, h6 {
   bottom: -10px;
   transition: transform 0.3s, bottom 0.3s 0.3s;
 }
-@media (max-width: 525px) {
+@media (max-width: 600px) {
   .burger {
     display: flex;
   }
