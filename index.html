@@ -14,9 +14,12 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous" defer="defer"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer="defer"></script>
     <script src="./js/reviews.js" defer="defer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer="defer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js" defer="defer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js" defer="defer"></script>
+    <script src="./js/gsapanim.js" defer="defer"></script>
 </head>
 <body>
-
     <header class="header" id="main-header">
         <div class="container">
             <div class="header__content">
@@ -54,7 +57,7 @@
             <div class="container">
                 <div class="welcome__content">
                     <article class="hero" id="hero">
-                        <h1 class="hero__title">Alexandr Kudinov</h1>
+                        <h1 class="hero__title" id="heroTitle">Alexandr Kudinov</h1>
                         <h2 class="hero__subtitle">full plan dev</h2>
                         <p class="hero__description">I search to become the best programmer, make my own studio and games</p>
                     </article>
@@ -68,14 +71,14 @@
                 </div>
             </div>
         </section>
-        <section class="about-me">
+        <section class="about-me" id="#aboutMe">
             <div class="container">
                 <div class="about-me__content">
                     <div class="animated-block">
                         <div class="animated-block__item animated-block--one"></div>
                         <div class="animated-block__item animated-block--two"></div>
                     </div>
-                    <p class="about-me__text">a few years ago i learned programming in a game... since then , i became interrested in becoming the best game dev and having my own game studio.<p>
+                    <p class="about-me__text" id="aboutText">a few years ago i learned programming in a game... since then , i became interrested in becoming the best game dev and having my own game studio.<p>
                 </div>
             </div>
         </section>
