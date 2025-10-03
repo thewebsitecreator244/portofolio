@@ -10,14 +10,13 @@ gsap.from("#heroTitle",
     }
 );
 
-mm.add("(max-width: 767px)", () => {
+mm.add("(min-width: 1200px) and (max-width:1440px)", () => {
     const tl = gsap.timeline({
         scrollTrigger: {
             trigger: "#about",
-            start: "top 90%",
-            end: "bottom 20%",
+            start: "20% 50%",
+            end: "30% 50%",
             scrub: 1,
-            markers: true
         }
     });
     const split = new SplitText("#aboutText", { type: "chars", mask: "chars" });
@@ -29,14 +28,14 @@ mm.add("(max-width: 767px)", () => {
     });
 });
 
-mm.add("(min-width: 768px) and (max-width: 1023px)", () => {
+mm.add("(min-width: 1023px) and (max-width:1199px)", () => {
     const tl = gsap.timeline({
         scrollTrigger: {
             trigger: "#about",
-            start: "27% 85%",
-            end: "32% 85%",
+            start: "25% 50%",
+            end: "35% 50%",
             scrub: 1,
-            markers: true
+
         }
     });
     const split = new SplitText("#aboutText", { type: "chars", mask: "chars" });
@@ -48,21 +47,3 @@ mm.add("(min-width: 768px) and (max-width: 1023px)", () => {
     });
 });
 
-mm.add("(min-width: 1024px)", () => {
-    const tl = gsap.timeline({
-        scrollTrigger: {
-            trigger: "#about",
-            start: "27% 80%",
-            end: "32% 80%",
-            scrub: 1,
-            markers: true
-        }
-    });
-    const split = new SplitText("#aboutText", { type: "chars", mask: "chars" });
-    tl.from(split.chars, {
-        duration: 1,
-        x: -20,
-        autoAlpha: 0,
-        stagger: 0.07
-    });
-});
